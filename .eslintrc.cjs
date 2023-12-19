@@ -1,0 +1,46 @@
+module.exports = {
+	root: true,
+	env: {
+		browser: true,
+		es2021: true,
+		node: true,
+	},
+	extends: [
+		'plugin:nuxt/recommended',
+		'plugin:vue/vue3-recommended',
+		'plugin:prettier/recommended',
+		'@nuxtjs/eslint-config-typescript',
+		'prettier',
+	],
+	parserOptions: {
+		ecmaVersion: 2021,
+		parser: '@typescript-eslint/parser',
+		sourceType: 'module',
+	},
+	plugins: ['vue', '@typescript-eslint', 'prettier'],
+	rules: {
+		// 'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+		// 'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+		'no-console': 'off',
+		'no-debugger': 'off',
+		'prettier/prettier': ['error', { endOfLine: 'auto' }],
+		'no-return-assign': 'off',
+		'no-tabs': 'off',
+		'import/order': 'off',
+		'import/no-named-as-default': 'off',
+		'no-unused-expressions': 'off',
+		'vue/no-v-html': 'off',
+		'vue/v-on-event-hyphenation': 'off',
+		'vue/custom-event-name-casing': 'off',
+		'vue/no-v-model-argument': 'off',
+		'vue/no-template-shadow': 'off',
+		'vue/multi-word-component-names': 'off',
+		'vue/no-reserved-component-names': 'off',
+		'@typescript-eslint/no-unused-vars': 'off',
+	},
+	overrides: [
+		// {
+		// 	files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
+		// },
+	],
+}

@@ -1,0 +1,29 @@
+{
+	"html.format.enable": false,
+	"javascript.format.enable": false,
+	"json.format.enable": false,
+	"css.validate": false,
+	"scss.validate": false,
+
+	"eslint.validate": ["vue", "javascript", "javascriptreact", "typescript", "typescriptreact"],
+	"eslint.workingDirectories": [
+		// 보통 이렇게 디렉토리 설정을 안해서 자동고침이 안된다
+		{
+			"mode": "auto"
+		}
+	],
+	"eslint.codeActionsOnSave.mode": "problems",
+	// "editor.codeActionsOnSave": {
+	// 	"source.fixAll.eslint": true, // eslint
+	// 	"source.fixAll.stylelint": true // Stylelint
+	// },
+	// formatter
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true,
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
+	"nuxt.isNuxtApp": true
+}

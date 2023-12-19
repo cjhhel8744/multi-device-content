@@ -1,0 +1,1346 @@
+{
+	"menuGroups": [
+		{
+			"group_id": "KKJ",
+			"group_nm": "국어"
+		},
+		{
+			"group_id": "NKKJ",
+			"group_nm": "국어-시"
+		},
+		{
+			"group_id": "RWJ",
+			"group_nm": "국어-동화"
+		},
+		{
+			"group_id": "MMJ",
+			"group_nm": "수학"
+		},
+		{
+			"group_id": "MJM",
+			"group_nm": "수학익힘"
+		},
+		{
+			"group_id": "T0EE",
+			"group_nm": "영어"
+		},
+		{
+			"group_id": "NJC",
+			"group_nm": "과학탐구"
+		},
+		{
+			"group_id": "SJS",
+			"group_nm": "사회"
+		},
+		{
+			"group_id": "DDJ",
+			"group_nm": "도덕"
+		},
+		{
+			"group_id": "BM",
+			"group_nm": "버터몬"
+		},
+		{
+			"group_id": "DIA",
+			"group_nm": "AI진단평가"
+		}
+	],
+	"menuItems": [
+		{
+			"group_id": "KKJ",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "KKJ310101",
+			"path": "KKJ310101/KKJ310101.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "KKJ310102",
+			"path": "KKJ310102/KKJ310102.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "3",
+			"chapter": "1",
+			"step": "3",
+			"id": "KKJ310103",
+			"path": "KKJ310103/KKJ310103.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "3",
+			"chapter": "2",
+			"step": "1",
+			"id": "KKJ310201",
+			"path": "KKJ310201/KKJ310201.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "3",
+			"chapter": "3",
+			"step": "1",
+			"id": "KKJ310301",
+			"path": "KKJ310301/KKJ310301.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "3",
+			"chapter": "3",
+			"step": "2",
+			"id": "KKJ310302",
+			"path": "KKJ310302/KKJ310302.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "3",
+			"chapter": "4",
+			"step": "1",
+			"id": "KKJ310401",
+			"path": "KKJ310401/KKJ310401.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "1",
+			"id": "KKJ410101",
+			"path": "KKJ410101/KKJ410101.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "2",
+			"id": "KKJ410102",
+			"path": "KKJ410102/KKJ410102.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "3",
+			"id": "KKJ410103",
+			"path": "KKJ410103/KKJ410103.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "4",
+			"chapter": "2",
+			"step": "1",
+			"id": "KKJ410201",
+			"path": "KKJ410201/KKJ410201.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "4",
+			"chapter": "3",
+			"step": "1",
+			"id": "KKJ410301",
+			"path": "KKJ410301/KKJ410301.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "4",
+			"chapter": "3",
+			"step": "2",
+			"id": "KKJ410302",
+			"path": "KKJ410302/KKJ410302.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "5",
+			"chapter": "1",
+			"step": "1",
+			"id": "KKJ510101",
+			"path": "KKJ510101/KKJ510101.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "5",
+			"chapter": "1",
+			"step": "2",
+			"id": "KKJ510102",
+			"path": "KKJ510102/KKJ510102.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "5",
+			"chapter": "1",
+			"step": "3",
+			"id": "KKJ510103",
+			"path": "KKJ510103/KKJ510103.xml"
+		},
+		{
+			"group_id": "KKJ",
+			"grade": "5",
+			"chapter": "2",
+			"step": "1",
+			"id": "KKJ510201",
+			"path": "KKJ510201/KKJ510201.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "4",
+			"chapter": "4",
+			"step": "0",
+			"id": "MJM01410100",
+			"path": "MJM01410100/MJM01410100.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "4",
+			"chapter": "4",
+			"step": "1",
+			"id": "MJM01410101",
+			"path": "MJM01410101/MJM01410101.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "5",
+			"chapter": "5",
+			"step": "0",
+			"id": "MJM01510100",
+			"path": "MJM01510100/MJM01510100.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "5",
+			"chapter": "5",
+			"step": "1",
+			"id": "MJM01510101",
+			"path": "MJM01510101/MJM01510101.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "5",
+			"chapter": "5",
+			"step": "2",
+			"id": "MJM01510102",
+			"path": "MJM01510102/MJM01510102.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "5",
+			"chapter": "5",
+			"step": "3",
+			"id": "MJM01510103",
+			"path": "MJM01510103/MJM01510103.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "6",
+			"chapter": "6",
+			"step": "0",
+			"id": "MJM01610100",
+			"path": "MJM01610100/MJM01610100.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "6",
+			"chapter": "6",
+			"step": "1",
+			"id": "MJM01610101",
+			"path": "MJM01610101/MJM01610101.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "6",
+			"chapter": "6",
+			"step": "2",
+			"id": "MJM01610102",
+			"path": "MJM01610102/MJM01610102.xml"
+		},
+		{
+			"group_id": "MJM",
+			"grade": "6",
+			"chapter": "6",
+			"step": "3",
+			"id": "MJM01610103",
+			"path": "MJM01610103/MJM01610103.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "1",
+			"chapter": "1",
+			"step": "4",
+			"id": "MMJ1103SK04",
+			"path": "MMJ1103SK04/MMJ1103SK04.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "1",
+			"chapter": "1",
+			"step": "2",
+			"id": "MMJ1103SS02",
+			"path": "MMJ1103SS02/MMJ1103SS02.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "1",
+			"chapter": "1",
+			"step": "1",
+			"id": "MMJ1104SS01",
+			"path": "MMJ1104SS01/MMJ1104SS01.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "0",
+			"id": "MMJ210000",
+			"path": "MMJ210000/MMJ210000.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "0",
+			"id": "MMJ210100",
+			"path": "MMJ210100/MMJ210100.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "MMJ210101",
+			"path": "MMJ210101/MMJ210101.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "2",
+			"id": "MMJ210102",
+			"path": "MMJ210102/MMJ210102.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "3",
+			"id": "MMJ210103",
+			"path": "MMJ210103/MMJ210103.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "7",
+			"id": "MMJ210107",
+			"path": "MMJ210107/MMJ210107.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "MMJ2101AGA",
+			"path": "MMJ2101AGA/MMJ2101AG.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "MMJ210201",
+			"path": "MMJ210201/MMJ210201.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "MMJ2102AGA",
+			"path": "MMJ2102AGA/MMJ2102AG.xml"
+		},
+		{
+			"group_id": "MMJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "0",
+			"id": "MMJ220100",
+			"path": "MMJ220100/MMJ220100.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "NJCJ310101",
+			"path": "NJCJ310101/NJCJ310101.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "2",
+			"step": "1",
+			"id": "NJCJ310201",
+			"path": "NJCJ310201/NJCJ310201.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "2",
+			"step": "2",
+			"id": "NJCJ310202",
+			"path": "NJCJ310202/NJCJ310202.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "2",
+			"step": "3",
+			"id": "NJCJ310203",
+			"path": "NJCJ310203/NJCJ310203.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "2",
+			"step": "4",
+			"id": "NJCJ310204",
+			"path": "NJCJ310204/NJCJ310204.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "3",
+			"step": "1",
+			"id": "NJCJ310301",
+			"path": "NJCJ310301/NJCJ310301.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "3",
+			"step": "2",
+			"id": "NJCJ310302",
+			"path": "NJCJ310302/NJCJ310302.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "3",
+			"step": "3",
+			"id": "NJCJ310303",
+			"path": "NJCJ310303/NJCJ310303.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "4",
+			"step": "1",
+			"id": "NJCJ310401",
+			"path": "NJCJ310401/NJCJ310401.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "3",
+			"chapter": "6",
+			"step": "1",
+			"id": "NJCJ310601",
+			"path": "NJCJ310601/NJCJ310601.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "4",
+			"chapter": "1",
+			"step": "1",
+			"id": "NJCJ410101",
+			"path": "NJCJ410101/NJCJ410101.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "4",
+			"chapter": "2",
+			"step": "1",
+			"id": "NJCJ410201",
+			"path": "NJCJ410201/NJCJ410201.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "4",
+			"chapter": "2",
+			"step": "2",
+			"id": "NJCJ410202",
+			"path": "NJCJ410202/NJCJ410202.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "4",
+			"chapter": "2",
+			"step": "3",
+			"id": "NJCJ410203",
+			"path": "NJCJ410203/NJCJ410203.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "4",
+			"chapter": "3",
+			"step": "1",
+			"id": "NJCJ410301",
+			"path": "NJCJ410301/NJCJ410301.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "5",
+			"chapter": "1",
+			"step": "1",
+			"id": "NJCJL510101",
+			"path": "NJCJL510101/NJCJL510101.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "5",
+			"chapter": "2",
+			"step": "1",
+			"id": "NJCJL510201",
+			"path": "NJCJL510201/NJCJL510201.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "5",
+			"chapter": "2",
+			"step": "2",
+			"id": "NJCJL510202",
+			"path": "NJCJL510202/NNJ510202.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "6",
+			"chapter": "1",
+			"step": "1",
+			"id": "NJCJL610101",
+			"path": "NJCJL610101/NJCJL610101.xml"
+		},
+		{
+			"group_id": "NJC",
+			"grade": "6",
+			"chapter": "2",
+			"step": "1",
+			"id": "NJCJL610201",
+			"path": "NJCJL610201/NJCJL610201.xml"
+		},
+		{
+			"group_id": "NKKJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "NKKJ210101",
+			"path": "NKKJ210101/NKKJ210101.xml"
+		},
+		{
+			"group_id": "NKKJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "3",
+			"id": "NKKJ210103",
+			"path": "NKKJ210103/NKKJ210103.xml"
+		},
+		{
+			"group_id": "NKKJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "4",
+			"id": "NKKJ210104",
+			"path": "NKKJ210104/NKKJ210104.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "RWJ210101",
+			"path": "RWJ210101/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "2",
+			"id": "RWJ210102",
+			"path": "RWJ210102/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "2",
+			"chapter": "2",
+			"step": "1",
+			"id": "RWJ210201",
+			"path": "RWJ210201/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "2",
+			"chapter": "2",
+			"step": "2",
+			"id": "RWJ210202",
+			"path": "RWJ210202/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "RWJ220101",
+			"path": "RWJ220101/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "2",
+			"id": "RWJ220102",
+			"path": "RWJ220102/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "2",
+			"chapter": "2",
+			"step": "1",
+			"id": "RWJ220201",
+			"path": "RWJ220201/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "RWJ310101",
+			"path": "RWJ310101/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "RWJ310102",
+			"path": "RWJ310102/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "3",
+			"chapter": "2",
+			"step": "1",
+			"id": "RWJ310201",
+			"path": "RWJ310201/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "1",
+			"id": "RWJ410101",
+			"path": "RWJ410101/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "2",
+			"id": "RWJ410102",
+			"path": "RWJ410102/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "4",
+			"chapter": "2",
+			"step": "1",
+			"id": "RWJ410201",
+			"path": "RWJ410201/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "4",
+			"chapter": "2",
+			"step": "2",
+			"id": "RWJ410202",
+			"path": "RWJ410202/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "4",
+			"chapter": "3",
+			"step": "1",
+			"id": "RWJ410301",
+			"path": "RWJ410301/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "4",
+			"chapter": "4",
+			"step": "1",
+			"id": "RWJ410401",
+			"path": "RWJ410401/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "1",
+			"id": "RWJ420101",
+			"path": "RWJ420101/html5.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "5",
+			"chapter": "1",
+			"step": "1",
+			"id": "RWJ510101",
+			"path": "RWJ510101/RWJ510101.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "5",
+			"chapter": "1",
+			"step": "2",
+			"id": "RWJ510102",
+			"path": "RWJ510102/RWJ510102.xml"
+		},
+		{
+			"group_id": "RWJ",
+			"grade": "5",
+			"chapter": "2",
+			"step": "1",
+			"id": "RWJ510201",
+			"path": "RWJ510201/RWJ510201.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "SJS01310101s",
+			"path": "SJS01310101s/SJS01310101.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "SJS01310102s",
+			"path": "SJS01310102s/SJS01310102.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "3",
+			"id": "SJS01310103s",
+			"path": "SJS01310103s/SJS01310103.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "4",
+			"id": "SJS01310104s",
+			"path": "SJS01310104s/SJS01310104.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "5",
+			"id": "SJS01310105",
+			"path": "SJS01310105/SSJ310107.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "6",
+			"id": "SJS01310106s",
+			"path": "SJS01310106s/SJS01310106.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "SJS01310201",
+			"path": "SJS01310201/SJS01310201.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "SJS01310202s",
+			"path": "SJS01310202s/SJS01310202.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "3",
+			"id": "SJS01310203",
+			"path": "SJS01310203/SJS01310203.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "3",
+			"chapter": "1",
+			"step": "5",
+			"id": "SJS01310205",
+			"path": "SJS01310205/SJS01310205.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "4",
+			"chapter": "1",
+			"step": "1",
+			"id": "SJS01410101ss",
+			"path": "SJS01410101ss/SJS01410101.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "4",
+			"chapter": "1",
+			"step": "2",
+			"id": "SJS01410102s",
+			"path": "SJS01410102s/SJS01410102.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "5",
+			"chapter": "1",
+			"step": "2",
+			"id": "SJS01510102",
+			"path": "SJS01510102/SJS01510102.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "5",
+			"chapter": "1",
+			"step": "3",
+			"id": "SJS01510103",
+			"path": "SJS01510103/SJS01510103.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "5",
+			"chapter": "1",
+			"step": "5",
+			"id": "SJS01510105",
+			"path": "SJS01510105/SJS01510105.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "5",
+			"chapter": "1",
+			"step": "6",
+			"id": "SJS01510106",
+			"path": "SJS01510106/SJS01510106.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "5",
+			"chapter": "1",
+			"step": "7",
+			"id": "SJS01510107",
+			"path": "SJS01510107/SJS01510107.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "6",
+			"chapter": "1",
+			"step": "2",
+			"id": "SJS01610102",
+			"path": "SJS01610102/SJS01610102.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "6",
+			"chapter": "1",
+			"step": "3",
+			"id": "SJS01610103",
+			"path": "SJS01610103/SJS01610103.xml"
+		},
+		{
+			"group_id": "SJS",
+			"grade": "6",
+			"chapter": "1",
+			"step": "4",
+			"id": "SJS01610104",
+			"path": "SJS01610104/SJS01610104.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "T0EE31U01001",
+			"path": "T0EE31U01001/T0EE31U01001.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "T0EE31U01002",
+			"path": "T0EE31U01002/T0EE31U01002.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "1",
+			"step": "3",
+			"id": "T0EE31U01003",
+			"path": "T0EE31U01003/T0EE31U01003.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "2",
+			"step": "1",
+			"id": "T0EE31U02001",
+			"path": "T0EE31U02001/T0EE31U02001.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "2",
+			"step": "2",
+			"id": "T0EE31U02002",
+			"path": "T0EE31U02002/T0EE31U02002.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "2",
+			"step": "3",
+			"id": "T0EE31U02003",
+			"path": "T0EE31U02003/T0EE31U02003.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "2",
+			"step": "1",
+			"id": "T0EE31U02011",
+			"path": "T0EE31U02011/T0EE31U02011.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "3",
+			"step": "1",
+			"id": "T0EE31U03001",
+			"path": "T0EE31U03001/T0EE31U03001.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "3",
+			"step": "2",
+			"id": "T0EE31U03002",
+			"path": "T0EE31U03002/T0EE31U03002.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "3",
+			"chapter": "3",
+			"step": "3",
+			"id": "T0EE31U03003",
+			"path": "T0EE31U03003/T0EE31U03003.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "4",
+			"chapter": "1",
+			"step": "1",
+			"id": "T0EE41U01001",
+			"path": "T0EE41U01001/T0EE41U01001.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "4",
+			"chapter": "1",
+			"step": "2",
+			"id": "T0EE41U01002",
+			"path": "T0EE41U01002/T0EE41U01002.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "4",
+			"chapter": "1",
+			"step": "3",
+			"id": "T0EE41U01003",
+			"path": "T0EE41U01003/T0EE41U01003.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "4",
+			"chapter": "2",
+			"step": "1",
+			"id": "T0EE41U02001",
+			"path": "T0EE41U02001/T0EE41U02001.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "4",
+			"chapter": "2",
+			"step": "2",
+			"id": "T0EE41U02002",
+			"path": "T0EE41U02002/T0EE41U02002.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "4",
+			"chapter": "2",
+			"step": "9",
+			"id": "T0EE41U02009",
+			"path": "T0EE41U02009/T0EE41U02009.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "4",
+			"chapter": "6",
+			"step": "1",
+			"id": "T0EE41U26001",
+			"path": "T0EE41U26001/T0EE41U26001.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "5",
+			"chapter": "1",
+			"step": "1",
+			"id": "T0EE51U01001",
+			"path": "T0EE51U01001/T0EE51U01001.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "5",
+			"chapter": "1",
+			"step": "2",
+			"id": "T0EE51U01002",
+			"path": "T0EE51U01002/T0EE51U01002.xml"
+		},
+		{
+			"group_id": "T0EE",
+			"grade": "5",
+			"chapter": "1",
+			"step": "3",
+			"id": "T0EE51U01003",
+			"path": "T0EE51U01003/T0EE51U01003.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "TTJ210101",
+			"path": "TTJ210101/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "2",
+			"id": "TTJ210102",
+			"path": "TTJ210102/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "3",
+			"id": "TTJ210103",
+			"path": "TTJ210103/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "4",
+			"id": "TTJ210104",
+			"path": "TTJ210104/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "5",
+			"id": "TTJ210105",
+			"path": "TTJ210105/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "6",
+			"id": "TTJ210106",
+			"path": "TTJ210106/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "7",
+			"id": "TTJ210107",
+			"path": "TTJ210107/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "1",
+			"step": "8",
+			"id": "TTJ210108",
+			"path": "TTJ210108/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "2",
+			"step": "2",
+			"id": "TTJ210202",
+			"path": "TTJ210202/html5.xml"
+		},
+		{
+			"group_id": "TTJ",
+			"grade": "2",
+			"chapter": "2",
+			"step": "4",
+			"id": "TTJ210204",
+			"path": "TTJ210204/html5.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "DDJ310101",
+			"path": "DDJ310101/DDJ310101.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "DDJ310102",
+			"path": "DDJ310102/DDJ310102.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "2",
+			"step": "1",
+			"id": "DDJ310201",
+			"path": "DDJ310201/DDJ310201.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "3",
+			"step": "1",
+			"id": "DDJ310301",
+			"path": "DDJ310301/DDJ310301.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "3",
+			"step": "2",
+			"id": "DDJ310302",
+			"path": "DDJ310302/DDJ310302.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "4",
+			"step": "1",
+			"id": "DDJ320401",
+			"path": "DDJ320401/DDJ320401.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "4",
+			"step": "2",
+			"id": "DDJ320402",
+			"path": "DDJ320402/DDJ320402.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "5",
+			"step": "1",
+			"id": "DDJ320501",
+			"path": "DDJ320501/DDJ320501.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "6",
+			"step": "1",
+			"id": "DDJ320601",
+			"path": "DDJ320601/DDJ320601.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "3",
+			"chapter": "6",
+			"step": "2",
+			"id": "DDJ320602",
+			"path": "DDJ320602/DDJ320602.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "1",
+			"id": "DDJ410101",
+			"path": "DDJ410101/DDJ410101.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "4",
+			"chapter": "1",
+			"step": "2",
+			"id": "DDJ410102",
+			"path": "DDJ410102/DDJ410102.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "4",
+			"chapter": "2",
+			"step": "1",
+			"id": "DDJ410201",
+			"path": "DDJ410201/DDJ410201.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "4",
+			"chapter": "3",
+			"step": "1",
+			"id": "DDJ410301",
+			"path": "DDJ410301/DDJ410301.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "4",
+			"chapter": "3",
+			"step": "2",
+			"id": "DDJ410302",
+			"path": "DDJ410302/DDJ410302.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "4",
+			"chapter": "4",
+			"step": "1",
+			"id": "DDJ420401",
+			"path": "DDJ420401/DDJ420401.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "5",
+			"chapter": "1",
+			"step": "1",
+			"id": "DDJ510101",
+			"path": "DDJ510101/DDJ510101.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "5",
+			"chapter": "2",
+			"step": "1",
+			"id": "DDJ510201",
+			"path": "DDJ510201/DDJ510201.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "5",
+			"chapter": "2",
+			"step": "2",
+			"id": "DDJ510202",
+			"path": "DDJ510202/DDJ510202.xml"
+		},
+		{
+			"group_id": "DDJ",
+			"grade": "5",
+			"chapter": "3",
+			"step": "1",
+			"id": "DDJ510301",
+			"path": "DDJ510301/DDJ510301.xml"
+		},
+		{
+			"group_id": "BM",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "BM02S0403",
+			"path": "BM02S0403/BM02S0403.xml"
+		},
+		{
+			"group_id": "BM",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "BM03S0101",
+			"path": "BM03S0101/BM03S0101.xml"
+		},
+		{
+			"group_id": "BM",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "BM03S0102",
+			"path": "BM03S0102/BM03S0102.xml"
+		},
+		{
+			"group_id": "BM",
+			"grade": "3",
+			"chapter": "1",
+			"step": "3",
+			"id": "BM03S0103",
+			"path": "BM03S0103/BM03S0103.xml"
+		},
+		{
+			"group_id": "BM",
+			"grade": "3",
+			"chapter": "1",
+			"step": "4",
+			"id": "BM03S0104",
+			"path": "BM03S0104/BM03S0104.xml"
+		},
+		{
+			"group_id": "BM",
+			"grade": "3",
+			"chapter": "1",
+			"step": "5",
+			"id": "BM03S0105",
+			"path": "BM03S0105/BM03S0105.xml"
+		},
+		{
+			"group_id": "DIA",
+			"grade": "2",
+			"chapter": "1",
+			"step": "1",
+			"id": "DiagnosticTest_1",
+			"path": "DiagnosticTest_1/DiagnosticTest_1.xml"
+		},
+		{
+			"group_id": "DIA",
+			"grade": "3",
+			"chapter": "1",
+			"step": "1",
+			"id": "DiagnosticTest_2",
+			"path": "DiagnosticTest_2/DiagnosticTest_2.xml"
+		},
+		{
+			"group_id": "DIA",
+			"grade": "3",
+			"chapter": "1",
+			"step": "2",
+			"id": "DiagnosticTest_3",
+			"path": "DiagnosticTest_3/DiagnosticTest_3.xml"
+		}
+	]
+}
