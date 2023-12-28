@@ -1,13 +1,16 @@
 import { consola } from 'consola'
-import type { ISoundInfo, ICdnMovie } from '@/types/frame'
+import type { ISoundInfo, ICdnMovie, IRecorderOption } from '@/types/frame'
 import type { IMenuState } from '@/types/menu'
+import Recorder from '@/utils/record/Recorder'
 
 const ifWinCamera = ref()
 const ifWinRecord = ref()
+const ifWinRecordCallbackId = ref('')
 const ifData = ref<string>('')
 const ifLastStep = ref<number>(0)
 const ifInstantData = ref<string>('')
 const ifIsCompleteContents = ref<boolean>(false)
+
 export const useHybridApp = () => {
 	return {
 		initFrameEvt,
@@ -31,7 +34,6 @@ const loadMovie = async (path: string) => {
 	}
 	return ''
 }
-
 const initFrameEvt = (
 	setIfXmlDocMenuIdx: any,
 	menus: IMenuState,
@@ -160,18 +162,24 @@ const initFrameEvt = (
 			const devices = await navigator.mediaDevices.enumerateDevices()
 			const videoDevices = devices.filter(device => device.kind === 'videoinput')
 			if (videoDevices.length > 0) {
-				if (ifWinCamera.value === undefined) {
-					const videoEl = ifWin.document.createElement('video')
-					videoEl.setAttribute('id', 'ifWinCamera')
-					videoEl.setAttribute('playsinline', '')
-					videoEl.setAttribute('autoplay', '')
-					videoEl.setAttribute('muted', '')
-					videoEl.style.width = width
-					videoEl.style.height = height
-					videoEl.style.position = 'fixed'
-					videoEl.style.marginTop = `${Math.abs(x) + 20}px`
-					// video.style.left = `${y}px`
-					ifWinCamera.value = videoEl
+				if (ifWin.document.querySelector('#ifWinCamera') != null) {
+					ifWin.document.querySelector('#ifWinCamera').remove()
+				}
+				const videoEl = ifWin.document.createElement('video')
+				videoEl.setAttribute('id', 'ifWinCamera')
+				videoEl.setAttribute('playsinline', '')
+				videoEl.setAttribute('autoplay', '')
+				videoEl.setAttribute('muted', '')
+				videoEl.style.width = `${width}px`
+				videoEl.style.height = `${height}px`
+				videoEl.style.position = 'fixed'
+				videoEl.style.marginLeft = `${x}px`
+				videoEl.style.marginTop = `${y}px`
+				// video.style.left = `${y}px`
+				ifWinCamera.value = videoEl
+				if (camFacing === 'front') {
+					ifWin.document.body.prepend(videoEl)
+				} else {
 					ifWin.document.body.firstElementChild.prepend(videoEl)
 				}
 				/* Setting up the constraint */
@@ -232,6 +240,7 @@ const initFrameEvt = (
 			eval(`ifWin.${fn}('${parseImg.length > 1 ? parseImg[1] : ''}')`)
 		}
 	}
+
 	ifWin.HybridApp.startSilvySTTMode = (val: any) => {
 		consola.success(`window.HybridApp.startSilvySTTMode(${val})`)
 		const str = '버리야 안녕 나는 씩씩한 냥이야. 도덕 공부를 하고 있어.'
@@ -245,54 +254,58 @@ const initFrameEvt = (
 			ifWin.HybridApp.nextMenu()
 		}
 	}
-	// Record
-	ifWin.HybridApp.startRecord = async (id: any) => {
-		debugger
+
+	/**
+	 * Description
+	 * @param {any} id:string
+	 * @returns {any}
+	 */
+	ifWin.HybridApp.startRecord = async (id: string): Promise<void> => {
 		consola.success(`window.HybridApp.startRecord(${id})`)
 		if (navigator.mediaDevices) {
 			const devices = await navigator.mediaDevices.enumerateDevices()
-			const videoDevices = devices.filter(device => device.kind === 'videoinput')
-			if (videoDevices.length > 0) {
-				if (ifWinRecord.value === undefined) {
-					const videoEl = ifWin.document.createElement('video')
-					videoEl.setAttribute('id', 'ifWinCamera')
-					// videoEl.setAttribute('playsinline', '')
-					videoEl.setAttribute('autoplay', '')
-					videoEl.setAttribute('muted', '')
-					// videoEl.style.position = 'fixed'
-					// videoEl.style.marginTop = `${Math.abs(x) + 20}px`
-					// video.style.left = `${y}px`
-					ifWinRecord.value = videoEl
-					ifWin.document.body.firstElementChild.prepend(videoEl)
-				}
-				/* Setting up the constraint */
-				const constraints = {
-					audio: true,
-					video: true,
-				}
-				/* Stream it to video element */
-				navigator.mediaDevices?.getUserMedia(constraints).then(async function success(stream) {
-					// ifWinRecord.value.srcObject = stream
-					const lengthInMS = 5000
-					debugger
-					const ret = await startRecording(stream, lengthInMS)
-					if (ret) {
-						console.log(ret)
-					}
+			const audioDevices = devices.filter(device => device.kind === 'audioinput')
+			if (audioDevices.length > 0) {
+				ifWinRecordCallbackId.value = id
+				const options = { bitRate: 128, sampleRate: 44100 } as unknown as IRecorderOption
+				ifWinRecord.value = new Recorder({
+					function() {
+						consola.error('Recorder error')
+					},
+					bitRate: options.bitRate,
+					sampleRate: options.sampleRate,
 				})
+				ifWinRecord.value?.start()
 			}
 		} else {
 			consola.error('마이크 설정이 되어있지 않습니다.')
 		}
 	}
-	ifWin.HybridApp.stopRecord = () => {
-		debugger
+	ifWin.HybridApp.afterRecording = (args: any) => {
+		consola.info(`afterRecording => ${args}`)
+		ifWin.HybridApp.createSound(ifWinRecordCallbackId.value, args.url)
+	}
+	ifWin.HybridApp.stopRecord = async () => {
+		if (ifWinRecord.value && ifWinRecordCallbackId.value !== '') {
+			await ifWinRecord.value.stop()
+			const recordList = ifWinRecord.value?.recordList()
+			if (recordList) {
+				const idx = audioList.value?.findIndex(
+					(item: { id: string }) => item.id === ifWinRecordCallbackId.value,
+				)
+				if (idx > -1) audioList.value?.splice(idx, 1)
+				setTimeout(() => {
+					ifWin.HybridApp.createSound(ifWinRecordCallbackId.value, recordList[0].url)
+				}, 1)
+			}
+		}
 		consola.success(`window.HybridApp.stopRecord`)
 	}
 	// 	// Sound
-	ifWin.HybridApp.createSound = (strId: string, strPath: any) => {
+	ifWin.HybridApp.createSound = (strId: string, strPath: string) => {
 		// consola.success(`window.HybridApp.createSound(${strId}, ${strPath})`)
-		if (audioList.value?.findIndex((item: { id: any }) => item.id === strId) === -1) {
+		const audioItem = audioList.value?.find((item: { id: string }) => item.id === strId)
+		const srcFullPath = () => {
 			const spl = frame.value.src.split('/HTML_TEST/')
 			let path = ''
 			const nDot = strPath.startsWith('../') ? 2 : 1
@@ -302,12 +315,37 @@ const initFrameEvt = (
 					.slice(0, spl[1].split('/').length - nDot)
 					.join('/')
 			}
-			const fullPath = `${spl[0]}/HTML_TEST/${path}/${strPath.replace('../', '')}`
+			return `${spl[0]}/HTML_TEST/${path}/${strPath.replace('../', '')}`
+		}
+		const fullPath = strId === ifWinRecordCallbackId.value ? strPath : srcFullPath()
+		if (audioItem === undefined) {
 			audioList.value.push({
 				id: strId,
 				src: fullPath,
 			} as ISoundInfo)
+		} else if (audioItem.src !== fullPath) {
+			audioItem.src = fullPath
 		}
+
+		// if (audioItem === null) {
+		// 	const spl = frame.value.src.split('/HTML_TEST/')
+		// 	let path = ''
+		// 	const nDot = strPath.startsWith('../') ? 2 : 1
+		// 	if (spl.length > 1) {
+		// 		path = spl[1]
+		// 			.split('/')
+		// 			.slice(0, spl[1].split('/').length - nDot)
+		// 			.join('/')
+		// 	}
+		// 	let fullPath = `${spl[0]}/HTML_TEST/${path}/${strPath.replace('../', '')}`
+		// 	if (strId === ifWinRecordCallbackId.value) {
+		// 		fullPath = strPath
+		// 	}
+		// 	audioList.value.push({
+		// 		id: strId,
+		// 		src: fullPath,
+		// 	} as ISoundInfo)
+		// }
 	}
 	ifWin.HybridApp.playSound = (strId: string, bLoop: any, nVolume: any, strCallbackName: any) => {
 		if (typeof window === 'undefined') return
@@ -325,6 +363,9 @@ const initFrameEvt = (
 			setTimeout(() => {
 				const audioEl = document.querySelector(`#${audioItem.id}`) as HTMLAudioElement
 				if (audioEl) {
+					if (audioEl.currentTime > 0) {
+						audioEl.currentTime = 0
+					}
 					if (audioEl.paused && audioEl.duration > 0 && !audioEl.ended) {
 						audioEl.play()
 					}
@@ -445,7 +486,6 @@ const initFrameEvt = (
 }
 
 const startRecording = (stream: MediaStream, lengthInMS: number) => {
-	debugger
 	const recorder = new MediaRecorder(stream)
 	const data = [] as any
 

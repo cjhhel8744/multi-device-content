@@ -72,7 +72,6 @@ export default class Recorder {
 
 		let record = null
 
-		debugger
 		const wavEncoder = await new WavEncoder({
 			bufferSize: this.bufferSize,
 			sampleRate: this.encoderOptions.sampleRate,

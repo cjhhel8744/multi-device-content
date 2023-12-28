@@ -3,14 +3,12 @@ export default class {
 	sampleRate: any
 	samples: any
 	constructor(options: any) {
-		debugger
 		this.bufferSize = options.bufferSize || 4096
 		this.sampleRate = options.sampleRate || 44100
 		this.samples = options.samples || []
 	}
 
 	finish() {
-		debugger
 		this._joinSamples()
 
 		const buffer = new ArrayBuffer(44 + this.samples.length * 2)
