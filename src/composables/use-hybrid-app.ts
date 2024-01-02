@@ -10,11 +10,27 @@ const ifData = ref<string>('')
 const ifLastStep = ref<number>(0)
 const ifInstantData = ref<string>('')
 const ifIsCompleteContents = ref<boolean>(false)
+const ifLocalStream = ref()
 
 export const useHybridApp = () => {
+	onUnmounted(() => {
+		if (typeof window === 'undefined') return
+		initLocalStream()
+	})
 	return {
 		initFrameEvt,
 		loadMovie,
+	}
+}
+
+const initLocalStream = () => {
+	if (ifLocalStream.value !== undefined) {
+		try {
+			const vidTrack = ifLocalStream.value?.getVideoTracks()
+			vidTrack?.forEach((track: any) => {
+				ifLocalStream.value.removeTrack(track)
+			})
+		} catch (e) {}
 	}
 }
 
@@ -34,6 +50,7 @@ const loadMovie = async (path: string) => {
 	}
 	return ''
 }
+
 const initFrameEvt = (
 	setIfXmlDocMenuIdx: any,
 	menus: IMenuState,
@@ -118,11 +135,13 @@ const initFrameEvt = (
 		return ifData.value
 	}
 	ifWin.HybridApp.setInstantData = (strData: string) => {
-		consola.success(`window.HybridApp.setInstantData(${strData})`)
+		consola.success(`window.HybridApp.setInstantData(${strData?.substring(0, 10)}...)`)
 		ifInstantData.value = strData
 	}
 	ifWin.HybridApp.getInstantData = () => {
-		consola.success(`return window.HybridApp.getInstantData => ${ifInstantData.value}`)
+		consola.success(
+			`return window.HybridApp.getInstantData => ${ifInstantData.value?.substring(0, 10)}...`,
+		)
 		return ifInstantData.value
 	}
 	ifWin.HybridApp.setLastStep = (nStep: number) => {
@@ -193,6 +212,7 @@ const initFrameEvt = (
 				/* Stream it to video element */
 				navigator.mediaDevices?.getUserMedia(constraints).then(function success(stream) {
 					ifWinCamera.value.srcObject = stream
+					ifLocalStream.value = stream
 				})
 			}
 		} else {
@@ -224,6 +244,7 @@ const initFrameEvt = (
 				} else if (typeof fn === 'string') {
 					// eslint-disable-next-line no-eval
 					eval(`ifWin.${fn}('${canvasCaptureDataSrc.value}')`)
+					// cameraClear()
 				}
 			}
 			doScreenshot()
@@ -238,6 +259,7 @@ const initFrameEvt = (
 		} else if (typeof fn === 'string') {
 			// eslint-disable-next-line no-eval
 			eval(`ifWin.${fn}('${parseImg.length > 1 ? parseImg[1] : ''}')`)
+			initLocalStream()
 		}
 	}
 

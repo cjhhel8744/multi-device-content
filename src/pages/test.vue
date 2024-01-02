@@ -43,7 +43,6 @@ const micFailed = () => {
 	errorMessage.value = ERROR_MESSAGE
 }
 const initRecorder = () => {
-	debugger
 	const options = { bitRate: 128, sampleRate: 44100 } as unknown as RecorderOption
 	recorder.value = new Recorder({
 		micFailed,
@@ -58,7 +57,6 @@ const initRecorder = () => {
 }
 
 const stopRecording = async () => {
-	debugger
 	await recorder.value.stop()
 	const recordList = recorder.value.recordList()
 	recordedAudio.value = recordList[0].url
