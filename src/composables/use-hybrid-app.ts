@@ -110,6 +110,7 @@ const initFrameEvt = (
 				}
 			}
 		}
+		initLocalStream()
 	}
 	ifWin.HybridApp.setMenu = (menuIdx: number) => {
 		consola.success(`window.HybridApp.setMenu(${menuIdx})`)
@@ -179,8 +180,8 @@ const initFrameEvt = (
 		)
 		if (navigator.mediaDevices) {
 			const devices = await navigator.mediaDevices.enumerateDevices()
-			const videoDevices = devices.filter(device => device.kind === 'videoinput')
-			if (videoDevices.length > 0) {
+			const videoDevices = devices?.filter(device => device.kind === 'videoinput')
+			if (videoDevices?.length > 0) {
 				if (ifWin.document.querySelector('#ifWinCamera') != null) {
 					ifWin.document.querySelector('#ifWinCamera').remove()
 				}
@@ -291,11 +292,12 @@ const initFrameEvt = (
 				ifWinRecordCallbackId.value = id
 				const options = { bitRate: 128, sampleRate: 44100 } as unknown as IRecorderOption
 				ifWinRecord.value = new Recorder({
-					function() {
+					micFailed: () => {
 						consola.error('Recorder error')
 					},
 					bitRate: options.bitRate,
 					sampleRate: options.sampleRate,
+					volume: 1,
 				})
 				ifWinRecord.value?.start()
 			}
@@ -385,7 +387,7 @@ const initFrameEvt = (
 			setTimeout(() => {
 				const audioEl = document.querySelector(`#${audioItem.id}`) as HTMLAudioElement
 				if (audioEl) {
-					if (audioEl.currentTime > 0) {
+					if (audioEl.ended && audioEl.currentTime > 0) {
 						audioEl.currentTime = 0
 					}
 					if (audioEl.paused && audioEl.duration > 0 && !audioEl.ended) {

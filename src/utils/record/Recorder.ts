@@ -37,7 +37,7 @@ export default class Recorder {
 		this.isRecording = false
 
 		this.duration = 0
-		this.volume = 0
+		this.volume = options.volume || 0
 
 		this.wavSamples = []
 
@@ -132,7 +132,8 @@ export default class Recorder {
 
 			this.duration =
 				parseFloat(this._duration.toString()) + parseFloat(this.context.currentTime.toFixed(2))
-			this.volume = Math.sqrt(sum / sample.length).toFixed(2) as any
+			this.volume =
+				this.volume === 0 ? (Math.sqrt(sum / sample.length).toFixed(2) as any) : this.volume
 		}
 
 		this.input.connect(this.processor)
